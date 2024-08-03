@@ -24,7 +24,7 @@ const AboutSection = () => {
         })}
       </div>
 
-      <div className="absolute bottom-0 right-0 -z-10 h-[200px] w-[190px] sm:h-[400px] sm:w-[400px] lg:h-[600px] lg:w-[600px]">
+      <div className="absolute bottom-0 right-0 -z-10 h-[210px] w-[220px] sm:h-[410px] sm:w-[440px] lg:h-[610px] lg:w-[640px]">
         <Image
           src={aboutframe}
           alt=""
