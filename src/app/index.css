@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("/fonts/DMSans-Regular.ttf");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #f7f7f9;
+    --background-100: #fff;
+    --background-200: #f1f2f6;
+    --background-300: #f4f4f8;
+
+    --foreground: #000;
+    --foreground-100: #7d7d80;
+
+    --secondary: #3e3efa;
+    --secondary-foreground: #3e3efa;
+
+    --variant: #ff7f50;
+
+    --grey: #8f8f8f;
+    --grey-btn: #dcdcdc;
+    --border: #d0d0d4;
+    --border-variant: #3e3efa;
+
+    --ring: #3e3efa;
+    --muted: #323232;
+    --muted-foreground: #9f9f9f;
+
+    --radius: 0.5rem;
+    --scroll-thumb: #969696;
+    --scroll-track: #ccc;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+  h1 {
+    @apply text-primaryFont font-bold;
+  }
+  h2 {
+    @apply text-secondaryFont font-bold;
+  }
+  h3 {
+    @apply text-subtitle font-semibold;
+  }
+}
+
+@layer utilities {
+  .row-flex {
+    @apply flex flex-row flex-nowrap items-center justify-center align-middle;
+  }
+  .row-flex-start {
+    @apply row-flex !justify-start;
+  }
+  .row-flex-btwn {
+    @apply flex flex-row flex-nowrap items-center justify-between align-middle;
+  }
+  .flex-column {
+    @apply flex flex-col items-start justify-center;
+  }
+
+  /* CUSTOM SECTION STYLES */
+  .badge {
+    @apply relative inline-flex w-max items-center rounded-lg bg-grey-btn px-4 py-1.5 text-sm font-semibold capitalize transition-colors focus:outline-none focus:ring-1 focus:ring-ring focus:ring-offset-1;
+  }
+
+  .btn-variant {
+    @apply row-flex inline-flex h-10 min-w-[130px] whitespace-nowrap rounded-lg bg-secondary px-10 py-4 font-semibold capitalize tracking-wide text-background subpixel-antialiased shadow-sm filter transition duration-150 hover:brightness-90 active:translate-y-0.5 active:brightness-90 disabled:pointer-events-none disabled:opacity-50 2xl:h-12 2xl:py-3;
+  }
+}
+
+@layer components {
+  .grid-mobile-features {
+    grid-auto-columns: minmax(min-content, 350px);
+  }
+  .grid-cols-features {
+    grid-template-columns: 2fr minmax(300px, 1fr);
+  }
+}

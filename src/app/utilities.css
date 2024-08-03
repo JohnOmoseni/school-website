@@ -1,0 +1,38 @@
+/* SVGS */
+.stroke-variant path {
+	stroke: var(--secondary) !important;
+}
+
+.nav-link:hover,
+.nav-link:hover * {
+	color: var(--foreground-variant);
+	stroke: var(--secondary) !important;
+}
+
+/* SCROLLBAR */
+.scrollbar-thin {
+	/* #17191e thumb #454e5b track */
+	scrollbar-color: initial initial;
+	scrollbar-color: var(--scrollbar-thumb, initial)
+		var(--scrollbar-track, initial);
+	scrollbar-width: thin;
+}
+
+/* Remove scrollbar */
+.remove-scrollbar::-webkit-scrollbar {
+	width: 0px;
+	height: 0px;
+}
+
+.remove-scrollbar::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+.remove-scrollbar::-webkit-scrollbar-thumb {
+	background: transparent;
+	border-radius: 0px;
+}
+
+.remove-scrollbar::-webkit-scrollbar {
+	display: none;
+}
