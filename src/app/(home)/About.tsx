@@ -24,13 +24,8 @@ const AboutSection = () => {
         })}
       </div>
 
-      <div className="absolute bottom-0 right-0 -z-10 h-[210px] w-[220px] sm:h-[410px] sm:w-[440px] lg:h-[610px] lg:w-[640px]">
-        <Image
-          src={aboutframe}
-          alt=""
-          fill
-          className="bottom-0 !h-auto object-cover"
-        />
+      <div className="absolute bottom-0 right-0 -z-10 h-[210px] w-[230px] sm:h-[410px] sm:w-[440px] lg:h-[610px] lg:w-[680px]">
+        <Image src={aboutframe} alt="" fill className="bottom-0 object-cover" />
       </div>
     </div>
   );

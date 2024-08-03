@@ -1,4 +1,4 @@
-import { FeatureCard } from "./Card";
+import { FeatureCard } from "./_sections/Card";
 import { features } from "@/constants";
 
 const Features = () => {

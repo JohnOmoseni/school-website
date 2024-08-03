@@ -58,7 +58,7 @@ function Hero() {
           alt="hero"
           width={1000}
           height={1000}
-          className="object-contain object-center md:max-h-[90vh]"
+          className="object-contain object-center md:max-h-[100vh]"
         />
 
         <Image
