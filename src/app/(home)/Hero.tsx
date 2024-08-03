@@ -16,7 +16,10 @@ import {
 
 function Hero() {
   return (
-    <div className="relative isolate grid min-h-dvh grid-cols-1 gap-8 pt-10 sm:pt-[6%] md:gap-12">
+    <div
+      id="home"
+      className="relative isolate grid min-h-dvh grid-cols-1 gap-8 pt-10 sm:pt-[6%] md:gap-12"
+    >
       <div className="flex-1 max-md:px-6">
         <h1 className="relative text-center">
           Transform Your School Into A{" "}

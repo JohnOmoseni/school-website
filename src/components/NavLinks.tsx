@@ -32,7 +32,7 @@ function NavLinks({
         href={href}
         {...animateFn(linksAni, idx)}
         onClick={() => handleClick(tag!)}
-        className="row-flex-start gap-3 p-1 transition-all"
+        className="row-flex-start gap-3 p-1 transition-all hover:scale-105"
       >
         <motion.span
           className={cn(
